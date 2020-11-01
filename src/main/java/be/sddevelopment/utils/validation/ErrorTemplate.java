@@ -42,6 +42,7 @@ import lombok.AllArgsConstructor;
  *
  * @author <a href="https://github.com/stijn-dejongh" target="_blank">Stijn Dejongh</a>
  * @version 1.0.0
+ * @since 1.0.0
  * @created : 18.10.20, Sunday
  */
 @AllArgsConstructor

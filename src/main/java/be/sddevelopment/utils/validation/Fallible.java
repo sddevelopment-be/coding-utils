@@ -33,8 +33,7 @@ import java.util.stream.Collectors;
 
 /**
  * <p>
- * <a href="https://en.wikipedia.org/wiki/Monad_(functional_programming)
- * target="_blank">Monad</a>-style Wrapper class to be used for condition based execution flows.
+ * <a href="https://en.wikipedia.org/wiki/Monad_(functional_programming)" target="_blank">Monad</a>-style Wrapper class to be used for condition based execution flows.
  * Intended for use in validation-style flows.
  * </p>
  *
