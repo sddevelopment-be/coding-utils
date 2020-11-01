@@ -7,12 +7,12 @@
  * Licensed under the EUPL, Version 1.1 or – as soon they will be
  * approved by the European Commission - subsequent versions of the
  * EUPL (the "Licence");
- *
+ * 
  * You may not use this work except in compliance with the Licence.
  * You may obtain a copy of the Licence at:
- *
+ * 
  * http://ec.europa.eu/idabc/eupl5
- *
+ * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the Licence is distributed on an "AS IS" basis,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -21,23 +21,21 @@
  * #L%
  */
 
-package be.sddevelopment.utils.exceptions;
+package be.sddevelopment.utils.constants;
 
-import java.util.function.Function;
 import lombok.experimental.UtilityClass;
 
 /**
  * <p>
- * When using functional programming techniques in java 8+,
- * a common issue is the inability to chain operations using method references if those
- * called methods throw a checked exception. <br />
- * This class is meant to <b>suppress these checked exceptions</b>.
- * <br /><br />
- * It can also be used to write your exception handling in a more fluent way,
- * and to facilitate designs based on using Unchecked Exceptions.
+ * Description of file/class
  * </p>
  *
  * <h6>Example usage</h6>
+ * <pre>
+ *  <code>
+ *    // No example available yet
+ *  </code>
+ * </pre>
  *
  * <h6>References</h6>
  *
@@ -47,15 +45,8 @@ import lombok.experimental.UtilityClass;
  * @since 1.0.0
  */
 @UtilityClass
-public final class ExceptionSuppressor {
+public final class Strings {
 
-  public static <T, R> Function<T, R> supress(FallibleFunction<T, R> toWrap) {
-    return t -> {
-      try {
-        return toWrap.apply(t);
-      } catch (Exception e) {
-        return null;
-      }
-    };
-  }
+  public static final String EMPTY_STRING = "";
+
 }
